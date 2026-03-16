@@ -39,7 +39,7 @@ const PinMenu = ({ usePDFSlickStore, setPinColor }: PinMenuProps) => {
             {colorStrengths.map((s) => (
               <div className="flex space-x-1" key={s}>
                 {colorNames.map((name) => (
-                  <Menu.Item key={name}>
+                  <Menu.Item key={`${name}-${s}`}>
                     <button
                       className="p-2 block rounded-full origin-center border border-transparent hover:scale-125 hover:border-blue-300"
                       style={{
